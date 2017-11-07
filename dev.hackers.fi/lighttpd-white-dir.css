@@ -1,15 +1,106 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:200,400,600);
-body, html { background: #EEE; margin:0 }
-html { font: 14px/1.4 Raleway, 'Helvetica Neue', Helvetica, sans-serif; color: #2B2B2B; font-weight: 400 }
+@import url(//fonts.googleapis.com/css?family=Raleway:200,400,600);
+body,
+html {
+  background: #EEE;
+  margin:0;
+}
 
-h2 { font-weight: 200; font-size: 45px; margin: 20px 35px }
+html {
+  font: 14px/1.4 Raleway, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #2B2B2B;
+  font-weight: 400;
+}
 
-div.list { background: white; padding: 20px 35px }
-div.foot { color: #777; margin-top: 15px; padding: 20px 35px }
+h2 {
+  font-weight: 200;
+  font-size: 45px;
+  margin: 20px 35px;
+}
 
-td { padding: 0 20px; line-height: 21px }
-tr:hover { background: #EEE }
+.list {
+  background: white;
+  padding: 20px 35px;
+}
 
-a { color: #32C6FF }
-a:visited { color: #BD32FF }
-a:hover { color: #00B3FA }
+.foot {
+  color: #777;
+  margin-top: 15px;
+  padding: 20px 35px;
+}
+
+td {
+  padding: 0 20px;
+  vertical-align: top;
+}
+
+tr:hover {
+  background: #EEE;
+}
+
+a {
+  color: #32C6FF;
+}
+
+a:visited {
+  color: #BD32FF;
+}
+
+a:hover {
+  color: #00B3FA;
+}
+
+.list .n {
+  word-break: break-all;
+}
+
+@media (max-device-width: 320px), (max-width: 720px) {
+  .m,
+  .t {
+    display: none;
+  }
+
+  .list table {
+    width: 100%;
+  }
+
+  .list thead {
+    text-align: left;
+  }
+
+  .list td {
+    padding-left: 0;
+  }
+
+}
+
+@media (max-device-width: 320px) {
+  h2 {
+    font-size: 6em;
+  }
+
+  .foot,
+  .list {
+    font-size: 4em;
+  }
+
+  .list tbody td {
+    border-bottom: 2px dashed #9b9b9b;
+  }
+
+  .list tbody tr:last-child td {
+    border: none;
+  }
+
+  .list tbody tr:first-child td {
+    display: none;
+  }
+
+  .list a {
+    text-decoration: none;
+  }
+
+  .foot {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
